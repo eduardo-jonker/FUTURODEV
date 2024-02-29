@@ -1,0 +1,13 @@
+const prompt = require('prompt-sync')();
+
+// Criar um array chamado frutas
+const frutas = [];
+
+// Utilizar um loop para receber cada uma das 3 frutas
+for (let i = 0; i < 3; i++) {
+    const fruta = prompt(`Digite a ${i + 1}ª fruta: `);
+    frutas.push(fruta);
+}
+
+// Imprimir a segunda fruta no console
+console.log(`A segunda fruta é: ${frutas[1]}`);
